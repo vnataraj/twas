@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57AF90CB171B85FD00696B25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CA171B85FD00696B25 /* UIKit.framework */; };
+		57AF90CD171B85FD00696B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CC171B85FD00696B25 /* Foundation.framework */; };
+		57AF90CF171B85FD00696B25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CE171B85FD00696B25 /* CoreGraphics.framework */; };
+		57AF90D5171B85FD00696B25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90D3171B85FD00696B25 /* InfoPlist.strings */; };
+		57AF90D7171B85FD00696B25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90D6171B85FD00696B25 /* main.m */; };
+		57AF90DB171B85FD00696B25 /* twasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90DA171B85FD00696B25 /* twasAppDelegate.m */; };
+		57AF90DD171B85FD00696B25 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90DC171B85FD00696B25 /* Default.png */; };
+		57AF90DF171B85FD00696B25 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90DE171B85FD00696B25 /* Default@2x.png */; };
+		57AF90E1171B85FD00696B25 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90E0171B85FD00696B25 /* Default-568h@2x.png */; };
+		57AF90E4171B85FD00696B25 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90E2171B85FD00696B25 /* MainStoryboard_iPhone.storyboard */; };
+		57AF90E7171B85FD00696B25 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90E5171B85FD00696B25 /* MainStoryboard_iPad.storyboard */; };
+		57AF90EA171B85FD00696B25 /* twasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90E9171B85FD00696B25 /* twasViewController.m */; };
+		57AF90F2171B85FD00696B25 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90F1171B85FD00696B25 /* SenTestingKit.framework */; };
+		57AF90F3171B85FD00696B25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CA171B85FD00696B25 /* UIKit.framework */; };
+		57AF90F4171B85FD00696B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CC171B85FD00696B25 /* Foundation.framework */; };
+		57AF90FC171B85FD00696B25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90FA171B85FD00696B25 /* InfoPlist.strings */; };
+		57AF90FF171B85FD00696B25 /* twasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90FE171B85FD00696B25 /* twasTests.m */; };
+		57AF9109171B861700696B25 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF9108171B861700696B25 /* Twitter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57AF90F5171B85FD00696B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57AF90BF171B85FD00696B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57AF90C6171B85FD00696B25;
+			remoteInfo = twas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57AF90C7171B85FD00696B25 /* twas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AF90CA171B85FD00696B25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		57AF90CC171B85FD00696B25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		57AF90CE171B85FD00696B25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		57AF90D2171B85FD00696B25 /* twas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twas-Info.plist"; sourceTree = "<group>"; };
+		57AF90D4171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57AF90D6171B85FD00696B25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57AF90D8171B85FD00696B25 /* twas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "twas-Prefix.pch"; sourceTree = "<group>"; };
+		57AF90D9171B85FD00696B25 /* twasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasAppDelegate.h; sourceTree = "<group>"; };
+		57AF90DA171B85FD00696B25 /* twasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasAppDelegate.m; sourceTree = "<group>"; };
+		57AF90DC171B85FD00696B25 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		57AF90DE171B85FD00696B25 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		57AF90E0171B85FD00696B25 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		57AF90E3171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		57AF90E6171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		57AF90E8171B85FD00696B25 /* twasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasViewController.h; sourceTree = "<group>"; };
+		57AF90E9171B85FD00696B25 /* twasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasViewController.m; sourceTree = "<group>"; };
+		57AF90F0171B85FD00696B25 /* twasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AF90F1171B85FD00696B25 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		57AF90F9171B85FD00696B25 /* twasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twasTests-Info.plist"; sourceTree = "<group>"; };
+		57AF90FB171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57AF90FD171B85FD00696B25 /* twasTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasTests.h; sourceTree = "<group>"; };
+		57AF90FE171B85FD00696B25 /* twasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasTests.m; sourceTree = "<group>"; };
+		57AF9108171B861700696B25 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57AF90C4171B85FD00696B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AF9109171B861700696B25 /* Twitter.framework in Frameworks */,
+				57AF90CB171B85FD00696B25 /* UIKit.framework in Frameworks */,
+				57AF90CD171B85FD00696B25 /* Foundation.framework in Frameworks */,
+				57AF90CF171B85FD00696B25 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57AF90EC171B85FD00696B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AF90F2171B85FD00696B25 /* SenTestingKit.framework in Frameworks */,
+				57AF90F3171B85FD00696B25 /* UIKit.framework in Frameworks */,
+				57AF90F4171B85FD00696B25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57AF90BE171B85FD00696B25 = {
+			isa = PBXGroup;
+			children = (
+				57AF9108171B861700696B25 /* Twitter.framework */,
+				57AF90D0171B85FD00696B25 /* twas */,
+				57AF90F7171B85FD00696B25 /* twasTests */,
+				57AF90C9171B85FD00696B25 /* Frameworks */,
+				57AF90C8171B85FD00696B25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57AF90C8171B85FD00696B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57AF90C7171B85FD00696B25 /* twas.app */,
+				57AF90F0171B85FD00696B25 /* twasTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57AF90C9171B85FD00696B25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57AF90CA171B85FD00696B25 /* UIKit.framework */,
+				57AF90CC171B85FD00696B25 /* Foundation.framework */,
+				57AF90CE171B85FD00696B25 /* CoreGraphics.framework */,
+				57AF90F1171B85FD00696B25 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57AF90D0171B85FD00696B25 /* twas */ = {
+			isa = PBXGroup;
+			children = (
+				57AF90D9171B85FD00696B25 /* twasAppDelegate.h */,
+				57AF90DA171B85FD00696B25 /* twasAppDelegate.m */,
+				57AF90E2171B85FD00696B25 /* MainStoryboard_iPhone.storyboard */,
+				57AF90E5171B85FD00696B25 /* MainStoryboard_iPad.storyboard */,
+				57AF90E8171B85FD00696B25 /* twasViewController.h */,
+				57AF90E9171B85FD00696B25 /* twasViewController.m */,
+				57AF90D1171B85FD00696B25 /* Supporting Files */,
+			);
+			path = twas;
+			sourceTree = "<group>";
+		};
+		57AF90D1171B85FD00696B25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57AF90D2171B85FD00696B25 /* twas-Info.plist */,
+				57AF90D3171B85FD00696B25 /* InfoPlist.strings */,
+				57AF90D6171B85FD00696B25 /* main.m */,
+				57AF90D8171B85FD00696B25 /* twas-Prefix.pch */,
+				57AF90DC171B85FD00696B25 /* Default.png */,
+				57AF90DE171B85FD00696B25 /* Default@2x.png */,
+				57AF90E0171B85FD00696B25 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57AF90F7171B85FD00696B25 /* twasTests */ = {
+			isa = PBXGroup;
+			children = (
+				57AF90FD171B85FD00696B25 /* twasTests.h */,
+				57AF90FE171B85FD00696B25 /* twasTests.m */,
+				57AF90F8171B85FD00696B25 /* Supporting Files */,
+			);
+			path = twasTests;
+			sourceTree = "<group>";
+		};
+		57AF90F8171B85FD00696B25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57AF90F9171B85FD00696B25 /* twasTests-Info.plist */,
+				57AF90FA171B85FD00696B25 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57AF90C6171B85FD00696B25 /* twas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57AF9102171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twas" */;
+			buildPhases = (
+				57AF90C3171B85FD00696B25 /* Sources */,
+				57AF90C4171B85FD00696B25 /* Frameworks */,
+				57AF90C5171B85FD00696B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = twas;
+			productName = twas;
+			productReference = 57AF90C7171B85FD00696B25 /* twas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57AF90EF171B85FD00696B25 /* twasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57AF9105171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twasTests" */;
+			buildPhases = (
+				57AF90EB171B85FD00696B25 /* Sources */,
+				57AF90EC171B85FD00696B25 /* Frameworks */,
+				57AF90ED171B85FD00696B25 /* Resources */,
+				57AF90EE171B85FD00696B25 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57AF90F6171B85FD00696B25 /* PBXTargetDependency */,
+			);
+			name = twasTests;
+			productName = twasTests;
+			productReference = 57AF90F0171B85FD00696B25 /* twasTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57AF90BF171B85FD00696B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = twas;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Nakama;
+			};
+			buildConfigurationList = 57AF90C2171B85FD00696B25 /* Build configuration list for PBXProject "twas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 57AF90BE171B85FD00696B25;
+			productRefGroup = 57AF90C8171B85FD00696B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57AF90C6171B85FD00696B25 /* twas */,
+				57AF90EF171B85FD00696B25 /* twasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57AF90C5171B85FD00696B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AF90D5171B85FD00696B25 /* InfoPlist.strings in Resources */,
+				57AF90DD171B85FD00696B25 /* Default.png in Resources */,
+				57AF90DF171B85FD00696B25 /* Default@2x.png in Resources */,
+				57AF90E1171B85FD00696B25 /* Default-568h@2x.png in Resources */,
+				57AF90E4171B85FD00696B25 /* MainStoryboard_iPhone.storyboard in Resources */,
+				57AF90E7171B85FD00696B25 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57AF90ED171B85FD00696B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AF90FC171B85FD00696B25 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57AF90EE171B85FD00696B25 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57AF90C3171B85FD00696B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AF90D7171B85FD00696B25 /* main.m in Sources */,
+				57AF90DB171B85FD00696B25 /* twasAppDelegate.m in Sources */,
+				57AF90EA171B85FD00696B25 /* twasViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57AF90EB171B85FD00696B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AF90FF171B85FD00696B25 /* twasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57AF90F6171B85FD00696B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57AF90C6171B85FD00696B25 /* twas */;
+			targetProxy = 57AF90F5171B85FD00696B25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57AF90D3171B85FD00696B25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57AF90D4171B85FD00696B25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		57AF90E2171B85FD00696B25 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57AF90E3171B85FD00696B25 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		57AF90E5171B85FD00696B25 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57AF90E6171B85FD00696B25 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		57AF90FA171B85FD00696B25 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57AF90FB171B85FD00696B25 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57AF9100171B85FD00696B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57AF9101171B85FD00696B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57AF9103171B85FD00696B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "twas/twas-Prefix.pch";
+				INFOPLIST_FILE = "twas/twas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		57AF9104171B85FD00696B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "twas/twas-Prefix.pch";
+				INFOPLIST_FILE = "twas/twas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		57AF9106171B85FD00696B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/twas.app/twas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "twas/twas-Prefix.pch";
+				INFOPLIST_FILE = "twasTests/twasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		57AF9107171B85FD00696B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/twas.app/twas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "twas/twas-Prefix.pch";
+				INFOPLIST_FILE = "twasTests/twasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57AF90C2171B85FD00696B25 /* Build configuration list for PBXProject "twas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57AF9100171B85FD00696B25 /* Debug */,
+				57AF9101171B85FD00696B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57AF9102171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57AF9103171B85FD00696B25 /* Debug */,
+				57AF9104171B85FD00696B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		57AF9105171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57AF9106171B85FD00696B25 /* Debug */,
+				57AF9107171B85FD00696B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57AF90BF171B85FD00696B25 /* Project object */;
+}

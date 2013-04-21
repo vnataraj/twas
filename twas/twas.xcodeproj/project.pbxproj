@@ -7,162 +7,198 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57AF90CB171B85FD00696B25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CA171B85FD00696B25 /* UIKit.framework */; };
-		57AF90CD171B85FD00696B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CC171B85FD00696B25 /* Foundation.framework */; };
-		57AF90CF171B85FD00696B25 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CE171B85FD00696B25 /* CoreGraphics.framework */; };
-		57AF90D5171B85FD00696B25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90D3171B85FD00696B25 /* InfoPlist.strings */; };
-		57AF90D7171B85FD00696B25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90D6171B85FD00696B25 /* main.m */; };
-		57AF90DB171B85FD00696B25 /* twasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90DA171B85FD00696B25 /* twasAppDelegate.m */; };
-		57AF90DD171B85FD00696B25 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90DC171B85FD00696B25 /* Default.png */; };
-		57AF90DF171B85FD00696B25 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90DE171B85FD00696B25 /* Default@2x.png */; };
-		57AF90E1171B85FD00696B25 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90E0171B85FD00696B25 /* Default-568h@2x.png */; };
-		57AF90E4171B85FD00696B25 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90E2171B85FD00696B25 /* MainStoryboard_iPhone.storyboard */; };
-		57AF90E7171B85FD00696B25 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90E5171B85FD00696B25 /* MainStoryboard_iPad.storyboard */; };
-		57AF90EA171B85FD00696B25 /* twasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90E9171B85FD00696B25 /* twasViewController.m */; };
-		57AF90F2171B85FD00696B25 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90F1171B85FD00696B25 /* SenTestingKit.framework */; };
-		57AF90F3171B85FD00696B25 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CA171B85FD00696B25 /* UIKit.framework */; };
-		57AF90F4171B85FD00696B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF90CC171B85FD00696B25 /* Foundation.framework */; };
-		57AF90FC171B85FD00696B25 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57AF90FA171B85FD00696B25 /* InfoPlist.strings */; };
-		57AF90FF171B85FD00696B25 /* twasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF90FE171B85FD00696B25 /* twasTests.m */; };
-		57AF9109171B861700696B25 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57AF9108171B861700696B25 /* Twitter.framework */; };
+		57EC53B0172341320045E2CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53AF172341320045E2CF /* UIKit.framework */; };
+		57EC53B2172341320045E2CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B1172341320045E2CF /* Foundation.framework */; };
+		57EC53B4172341330045E2CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B3172341320045E2CF /* CoreGraphics.framework */; };
+		57EC53BA172341330045E2CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53B8172341330045E2CF /* InfoPlist.strings */; };
+		57EC53BC172341330045E2CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC53BB172341330045E2CF /* main.m */; };
+		57EC53C0172341330045E2CF /* twasAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC53BF172341330045E2CF /* twasAppDelegate.m */; };
+		57EC53C2172341330045E2CF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53C1172341330045E2CF /* Default.png */; };
+		57EC53C4172341330045E2CF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53C3172341330045E2CF /* Default@2x.png */; };
+		57EC53C6172341330045E2CF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53C5172341330045E2CF /* Default-568h@2x.png */; };
+		57EC53C9172341330045E2CF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53C7172341330045E2CF /* MainStoryboard_iPhone.storyboard */; };
+		57EC53CC172341330045E2CF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53CA172341330045E2CF /* MainStoryboard_iPad.storyboard */; };
+		57EC53CF172341330045E2CF /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC53CE172341330045E2CF /* TweetViewController.m */; };
+		57EC53D1172341330045E2CF /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53D0172341330045E2CF /* first.png */; };
+		57EC53D3172341330045E2CF /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53D2172341330045E2CF /* first@2x.png */; };
+		57EC53D6172341330045E2CF /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC53D5172341330045E2CF /* ProfileViewController.m */; };
+		57EC53D8172341330045E2CF /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53D7172341330045E2CF /* second.png */; };
+		57EC53DA172341330045E2CF /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53D9172341330045E2CF /* second@2x.png */; };
+		57EC53E2172341330045E2CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53E1172341330045E2CF /* SenTestingKit.framework */; };
+		57EC53E3172341330045E2CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53AF172341320045E2CF /* UIKit.framework */; };
+		57EC53E4172341330045E2CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B1172341320045E2CF /* Foundation.framework */; };
+		57EC53EC172341330045E2CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57EC53EA172341330045E2CF /* InfoPlist.strings */; };
+		57EC53EF172341330045E2CF /* twasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC53EE172341330045E2CF /* twasTests.m */; };
+		57EC53F9172341DC0045E2CF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53F8172341DC0045E2CF /* Accounts.framework */; };
+		57EC53FB172341E60045E2CF /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53FA172341E60045E2CF /* Twitter.framework */; };
+		57EC53FE172343270045E2CF /* FollowMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC53FD172343270045E2CF /* FollowMeViewController.m */; };
+		57EC54011723434B0045E2CF /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC54001723434B0045E2CF /* NewsFeedViewController.m */; };
+		57EC54041723436C0045E2CF /* MentionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC54031723436C0045E2CF /* MentionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		57AF90F5171B85FD00696B25 /* PBXContainerItemProxy */ = {
+		57EC53E5172341330045E2CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 57AF90BF171B85FD00696B25 /* Project object */;
+			containerPortal = 57EC53A4172341320045E2CF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 57AF90C6171B85FD00696B25;
+			remoteGlobalIDString = 57EC53AB172341320045E2CF;
 			remoteInfo = twas;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		57AF90C7171B85FD00696B25 /* twas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twas.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		57AF90CA171B85FD00696B25 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		57AF90CC171B85FD00696B25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		57AF90CE171B85FD00696B25 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		57AF90D2171B85FD00696B25 /* twas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twas-Info.plist"; sourceTree = "<group>"; };
-		57AF90D4171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		57AF90D6171B85FD00696B25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		57AF90D8171B85FD00696B25 /* twas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "twas-Prefix.pch"; sourceTree = "<group>"; };
-		57AF90D9171B85FD00696B25 /* twasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasAppDelegate.h; sourceTree = "<group>"; };
-		57AF90DA171B85FD00696B25 /* twasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasAppDelegate.m; sourceTree = "<group>"; };
-		57AF90DC171B85FD00696B25 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		57AF90DE171B85FD00696B25 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		57AF90E0171B85FD00696B25 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		57AF90E3171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		57AF90E6171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		57AF90E8171B85FD00696B25 /* twasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasViewController.h; sourceTree = "<group>"; };
-		57AF90E9171B85FD00696B25 /* twasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasViewController.m; sourceTree = "<group>"; };
-		57AF90F0171B85FD00696B25 /* twasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57AF90F1171B85FD00696B25 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		57AF90F9171B85FD00696B25 /* twasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twasTests-Info.plist"; sourceTree = "<group>"; };
-		57AF90FB171B85FD00696B25 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		57AF90FD171B85FD00696B25 /* twasTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasTests.h; sourceTree = "<group>"; };
-		57AF90FE171B85FD00696B25 /* twasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasTests.m; sourceTree = "<group>"; };
-		57AF9108171B861700696B25 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		57EC53AC172341320045E2CF /* twas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57EC53AF172341320045E2CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		57EC53B1172341320045E2CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		57EC53B3172341320045E2CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		57EC53B7172341330045E2CF /* twas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twas-Info.plist"; sourceTree = "<group>"; };
+		57EC53B9172341330045E2CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57EC53BB172341330045E2CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57EC53BD172341330045E2CF /* twas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "twas-Prefix.pch"; sourceTree = "<group>"; };
+		57EC53BE172341330045E2CF /* twasAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasAppDelegate.h; sourceTree = "<group>"; };
+		57EC53BF172341330045E2CF /* twasAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasAppDelegate.m; sourceTree = "<group>"; };
+		57EC53C1172341330045E2CF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		57EC53C3172341330045E2CF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		57EC53C5172341330045E2CF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		57EC53C8172341330045E2CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		57EC53CB172341330045E2CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		57EC53CD172341330045E2CF /* TweetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
+		57EC53CE172341330045E2CF /* TweetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
+		57EC53D0172341330045E2CF /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		57EC53D2172341330045E2CF /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		57EC53D4172341330045E2CF /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		57EC53D5172341330045E2CF /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		57EC53D7172341330045E2CF /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		57EC53D9172341330045E2CF /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		57EC53E0172341330045E2CF /* twasTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twasTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57EC53E1172341330045E2CF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		57EC53E9172341330045E2CF /* twasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "twasTests-Info.plist"; sourceTree = "<group>"; };
+		57EC53EB172341330045E2CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57EC53ED172341330045E2CF /* twasTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twasTests.h; sourceTree = "<group>"; };
+		57EC53EE172341330045E2CF /* twasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twasTests.m; sourceTree = "<group>"; };
+		57EC53F8172341DC0045E2CF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		57EC53FA172341E60045E2CF /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		57EC53FC172343270045E2CF /* FollowMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowMeViewController.h; sourceTree = "<group>"; };
+		57EC53FD172343270045E2CF /* FollowMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowMeViewController.m; sourceTree = "<group>"; };
+		57EC53FF1723434B0045E2CF /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
+		57EC54001723434B0045E2CF /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
+		57EC54021723436C0045E2CF /* MentionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentionsViewController.h; sourceTree = "<group>"; };
+		57EC54031723436C0045E2CF /* MentionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57AF90C4171B85FD00696B25 /* Frameworks */ = {
+		57EC53A9172341320045E2CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF9109171B861700696B25 /* Twitter.framework in Frameworks */,
-				57AF90CB171B85FD00696B25 /* UIKit.framework in Frameworks */,
-				57AF90CD171B85FD00696B25 /* Foundation.framework in Frameworks */,
-				57AF90CF171B85FD00696B25 /* CoreGraphics.framework in Frameworks */,
+				57EC53FB172341E60045E2CF /* Twitter.framework in Frameworks */,
+				57EC53F9172341DC0045E2CF /* Accounts.framework in Frameworks */,
+				57EC53B0172341320045E2CF /* UIKit.framework in Frameworks */,
+				57EC53B2172341320045E2CF /* Foundation.framework in Frameworks */,
+				57EC53B4172341330045E2CF /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57AF90EC171B85FD00696B25 /* Frameworks */ = {
+		57EC53DC172341330045E2CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF90F2171B85FD00696B25 /* SenTestingKit.framework in Frameworks */,
-				57AF90F3171B85FD00696B25 /* UIKit.framework in Frameworks */,
-				57AF90F4171B85FD00696B25 /* Foundation.framework in Frameworks */,
+				57EC53E2172341330045E2CF /* SenTestingKit.framework in Frameworks */,
+				57EC53E3172341330045E2CF /* UIKit.framework in Frameworks */,
+				57EC53E4172341330045E2CF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		57AF90BE171B85FD00696B25 = {
+		57EC53A3172341320045E2CF = {
 			isa = PBXGroup;
 			children = (
-				57AF9108171B861700696B25 /* Twitter.framework */,
-				57AF90D0171B85FD00696B25 /* twas */,
-				57AF90F7171B85FD00696B25 /* twasTests */,
-				57AF90C9171B85FD00696B25 /* Frameworks */,
-				57AF90C8171B85FD00696B25 /* Products */,
+				57EC53FA172341E60045E2CF /* Twitter.framework */,
+				57EC53F8172341DC0045E2CF /* Accounts.framework */,
+				57EC53B5172341330045E2CF /* twas */,
+				57EC53E7172341330045E2CF /* twasTests */,
+				57EC53AE172341320045E2CF /* Frameworks */,
+				57EC53AD172341320045E2CF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		57AF90C8171B85FD00696B25 /* Products */ = {
+		57EC53AD172341320045E2CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57AF90C7171B85FD00696B25 /* twas.app */,
-				57AF90F0171B85FD00696B25 /* twasTests.octest */,
+				57EC53AC172341320045E2CF /* twas.app */,
+				57EC53E0172341330045E2CF /* twasTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57AF90C9171B85FD00696B25 /* Frameworks */ = {
+		57EC53AE172341320045E2CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57AF90CA171B85FD00696B25 /* UIKit.framework */,
-				57AF90CC171B85FD00696B25 /* Foundation.framework */,
-				57AF90CE171B85FD00696B25 /* CoreGraphics.framework */,
-				57AF90F1171B85FD00696B25 /* SenTestingKit.framework */,
+				57EC53AF172341320045E2CF /* UIKit.framework */,
+				57EC53B1172341320045E2CF /* Foundation.framework */,
+				57EC53B3172341320045E2CF /* CoreGraphics.framework */,
+				57EC53E1172341330045E2CF /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		57AF90D0171B85FD00696B25 /* twas */ = {
+		57EC53B5172341330045E2CF /* twas */ = {
 			isa = PBXGroup;
 			children = (
-				57AF90D9171B85FD00696B25 /* twasAppDelegate.h */,
-				57AF90DA171B85FD00696B25 /* twasAppDelegate.m */,
-				57AF90E2171B85FD00696B25 /* MainStoryboard_iPhone.storyboard */,
-				57AF90E5171B85FD00696B25 /* MainStoryboard_iPad.storyboard */,
-				57AF90E8171B85FD00696B25 /* twasViewController.h */,
-				57AF90E9171B85FD00696B25 /* twasViewController.m */,
-				57AF90D1171B85FD00696B25 /* Supporting Files */,
+				57EC53BE172341330045E2CF /* twasAppDelegate.h */,
+				57EC53BF172341330045E2CF /* twasAppDelegate.m */,
+				57EC53C7172341330045E2CF /* MainStoryboard_iPhone.storyboard */,
+				57EC53CA172341330045E2CF /* MainStoryboard_iPad.storyboard */,
+				57EC53CD172341330045E2CF /* TweetViewController.h */,
+				57EC53CE172341330045E2CF /* TweetViewController.m */,
+				57EC53D0172341330045E2CF /* first.png */,
+				57EC53D2172341330045E2CF /* first@2x.png */,
+				57EC53D4172341330045E2CF /* ProfileViewController.h */,
+				57EC53D5172341330045E2CF /* ProfileViewController.m */,
+				57EC53D7172341330045E2CF /* second.png */,
+				57EC53D9172341330045E2CF /* second@2x.png */,
+				57EC53B6172341330045E2CF /* Supporting Files */,
+				57EC53FC172343270045E2CF /* FollowMeViewController.h */,
+				57EC53FD172343270045E2CF /* FollowMeViewController.m */,
+				57EC53FF1723434B0045E2CF /* NewsFeedViewController.h */,
+				57EC54001723434B0045E2CF /* NewsFeedViewController.m */,
+				57EC54021723436C0045E2CF /* MentionsViewController.h */,
+				57EC54031723436C0045E2CF /* MentionsViewController.m */,
 			);
 			path = twas;
 			sourceTree = "<group>";
 		};
-		57AF90D1171B85FD00696B25 /* Supporting Files */ = {
+		57EC53B6172341330045E2CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				57AF90D2171B85FD00696B25 /* twas-Info.plist */,
-				57AF90D3171B85FD00696B25 /* InfoPlist.strings */,
-				57AF90D6171B85FD00696B25 /* main.m */,
-				57AF90D8171B85FD00696B25 /* twas-Prefix.pch */,
-				57AF90DC171B85FD00696B25 /* Default.png */,
-				57AF90DE171B85FD00696B25 /* Default@2x.png */,
-				57AF90E0171B85FD00696B25 /* Default-568h@2x.png */,
+				57EC53B7172341330045E2CF /* twas-Info.plist */,
+				57EC53B8172341330045E2CF /* InfoPlist.strings */,
+				57EC53BB172341330045E2CF /* main.m */,
+				57EC53BD172341330045E2CF /* twas-Prefix.pch */,
+				57EC53C1172341330045E2CF /* Default.png */,
+				57EC53C3172341330045E2CF /* Default@2x.png */,
+				57EC53C5172341330045E2CF /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		57AF90F7171B85FD00696B25 /* twasTests */ = {
+		57EC53E7172341330045E2CF /* twasTests */ = {
 			isa = PBXGroup;
 			children = (
-				57AF90FD171B85FD00696B25 /* twasTests.h */,
-				57AF90FE171B85FD00696B25 /* twasTests.m */,
-				57AF90F8171B85FD00696B25 /* Supporting Files */,
+				57EC53ED172341330045E2CF /* twasTests.h */,
+				57EC53EE172341330045E2CF /* twasTests.m */,
+				57EC53E8172341330045E2CF /* Supporting Files */,
 			);
 			path = twasTests;
 			sourceTree = "<group>";
 		};
-		57AF90F8171B85FD00696B25 /* Supporting Files */ = {
+		57EC53E8172341330045E2CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				57AF90F9171B85FD00696B25 /* twasTests-Info.plist */,
-				57AF90FA171B85FD00696B25 /* InfoPlist.strings */,
+				57EC53E9172341330045E2CF /* twasTests-Info.plist */,
+				57EC53EA172341330045E2CF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -170,13 +206,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		57AF90C6171B85FD00696B25 /* twas */ = {
+		57EC53AB172341320045E2CF /* twas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57AF9102171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twas" */;
+			buildConfigurationList = 57EC53F2172341330045E2CF /* Build configuration list for PBXNativeTarget "twas" */;
 			buildPhases = (
-				57AF90C3171B85FD00696B25 /* Sources */,
-				57AF90C4171B85FD00696B25 /* Frameworks */,
-				57AF90C5171B85FD00696B25 /* Resources */,
+				57EC53A8172341320045E2CF /* Sources */,
+				57EC53A9172341320045E2CF /* Frameworks */,
+				57EC53AA172341320045E2CF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -184,82 +220,86 @@
 			);
 			name = twas;
 			productName = twas;
-			productReference = 57AF90C7171B85FD00696B25 /* twas.app */;
+			productReference = 57EC53AC172341320045E2CF /* twas.app */;
 			productType = "com.apple.product-type.application";
 		};
-		57AF90EF171B85FD00696B25 /* twasTests */ = {
+		57EC53DF172341330045E2CF /* twasTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57AF9105171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twasTests" */;
+			buildConfigurationList = 57EC53F5172341330045E2CF /* Build configuration list for PBXNativeTarget "twasTests" */;
 			buildPhases = (
-				57AF90EB171B85FD00696B25 /* Sources */,
-				57AF90EC171B85FD00696B25 /* Frameworks */,
-				57AF90ED171B85FD00696B25 /* Resources */,
-				57AF90EE171B85FD00696B25 /* ShellScript */,
+				57EC53DB172341330045E2CF /* Sources */,
+				57EC53DC172341330045E2CF /* Frameworks */,
+				57EC53DD172341330045E2CF /* Resources */,
+				57EC53DE172341330045E2CF /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				57AF90F6171B85FD00696B25 /* PBXTargetDependency */,
+				57EC53E6172341330045E2CF /* PBXTargetDependency */,
 			);
 			name = twasTests;
 			productName = twasTests;
-			productReference = 57AF90F0171B85FD00696B25 /* twasTests.octest */;
+			productReference = 57EC53E0172341330045E2CF /* twasTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		57AF90BF171B85FD00696B25 /* Project object */ = {
+		57EC53A4172341320045E2CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = twas;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Nakama;
 			};
-			buildConfigurationList = 57AF90C2171B85FD00696B25 /* Build configuration list for PBXProject "twas" */;
+			buildConfigurationList = 57EC53A7172341320045E2CF /* Build configuration list for PBXProject "twas" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 57AF90BE171B85FD00696B25;
-			productRefGroup = 57AF90C8171B85FD00696B25 /* Products */;
+			mainGroup = 57EC53A3172341320045E2CF;
+			productRefGroup = 57EC53AD172341320045E2CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57AF90C6171B85FD00696B25 /* twas */,
-				57AF90EF171B85FD00696B25 /* twasTests */,
+				57EC53AB172341320045E2CF /* twas */,
+				57EC53DF172341330045E2CF /* twasTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		57AF90C5171B85FD00696B25 /* Resources */ = {
+		57EC53AA172341320045E2CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF90D5171B85FD00696B25 /* InfoPlist.strings in Resources */,
-				57AF90DD171B85FD00696B25 /* Default.png in Resources */,
-				57AF90DF171B85FD00696B25 /* Default@2x.png in Resources */,
-				57AF90E1171B85FD00696B25 /* Default-568h@2x.png in Resources */,
-				57AF90E4171B85FD00696B25 /* MainStoryboard_iPhone.storyboard in Resources */,
-				57AF90E7171B85FD00696B25 /* MainStoryboard_iPad.storyboard in Resources */,
+				57EC53BA172341330045E2CF /* InfoPlist.strings in Resources */,
+				57EC53C2172341330045E2CF /* Default.png in Resources */,
+				57EC53C4172341330045E2CF /* Default@2x.png in Resources */,
+				57EC53C6172341330045E2CF /* Default-568h@2x.png in Resources */,
+				57EC53C9172341330045E2CF /* MainStoryboard_iPhone.storyboard in Resources */,
+				57EC53CC172341330045E2CF /* MainStoryboard_iPad.storyboard in Resources */,
+				57EC53D1172341330045E2CF /* first.png in Resources */,
+				57EC53D3172341330045E2CF /* first@2x.png in Resources */,
+				57EC53D8172341330045E2CF /* second.png in Resources */,
+				57EC53DA172341330045E2CF /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57AF90ED171B85FD00696B25 /* Resources */ = {
+		57EC53DD172341330045E2CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF90FC171B85FD00696B25 /* InfoPlist.strings in Resources */,
+				57EC53EC172341330045E2CF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		57AF90EE171B85FD00696B25 /* ShellScript */ = {
+		57EC53DE172341330045E2CF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,63 +315,67 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		57AF90C3171B85FD00696B25 /* Sources */ = {
+		57EC53A8172341320045E2CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF90D7171B85FD00696B25 /* main.m in Sources */,
-				57AF90DB171B85FD00696B25 /* twasAppDelegate.m in Sources */,
-				57AF90EA171B85FD00696B25 /* twasViewController.m in Sources */,
+				57EC53BC172341330045E2CF /* main.m in Sources */,
+				57EC53C0172341330045E2CF /* twasAppDelegate.m in Sources */,
+				57EC53CF172341330045E2CF /* TweetViewController.m in Sources */,
+				57EC53D6172341330045E2CF /* ProfileViewController.m in Sources */,
+				57EC53FE172343270045E2CF /* FollowMeViewController.m in Sources */,
+				57EC54011723434B0045E2CF /* NewsFeedViewController.m in Sources */,
+				57EC54041723436C0045E2CF /* MentionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57AF90EB171B85FD00696B25 /* Sources */ = {
+		57EC53DB172341330045E2CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AF90FF171B85FD00696B25 /* twasTests.m in Sources */,
+				57EC53EF172341330045E2CF /* twasTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		57AF90F6171B85FD00696B25 /* PBXTargetDependency */ = {
+		57EC53E6172341330045E2CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 57AF90C6171B85FD00696B25 /* twas */;
-			targetProxy = 57AF90F5171B85FD00696B25 /* PBXContainerItemProxy */;
+			target = 57EC53AB172341320045E2CF /* twas */;
+			targetProxy = 57EC53E5172341330045E2CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		57AF90D3171B85FD00696B25 /* InfoPlist.strings */ = {
+		57EC53B8172341330045E2CF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				57AF90D4171B85FD00696B25 /* en */,
+				57EC53B9172341330045E2CF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		57AF90E2171B85FD00696B25 /* MainStoryboard_iPhone.storyboard */ = {
+		57EC53C7172341330045E2CF /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				57AF90E3171B85FD00696B25 /* en */,
+				57EC53C8172341330045E2CF /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		57AF90E5171B85FD00696B25 /* MainStoryboard_iPad.storyboard */ = {
+		57EC53CA172341330045E2CF /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				57AF90E6171B85FD00696B25 /* en */,
+				57EC53CB172341330045E2CF /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		57AF90FA171B85FD00696B25 /* InfoPlist.strings */ = {
+		57EC53EA172341330045E2CF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				57AF90FB171B85FD00696B25 /* en */,
+				57EC53EB172341330045E2CF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -339,7 +383,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		57AF9100171B85FD00696B25 /* Debug */ = {
+		57EC53F0172341330045E2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,7 +415,7 @@
 			};
 			name = Debug;
 		};
-		57AF9101171B85FD00696B25 /* Release */ = {
+		57EC53F1172341330045E2CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,29 +441,31 @@
 			};
 			name = Release;
 		};
-		57AF9103171B85FD00696B25 /* Debug */ = {
+		57EC53F3172341330045E2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "twas/twas-Prefix.pch";
 				INFOPLIST_FILE = "twas/twas-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		57AF9104171B85FD00696B25 /* Release */ = {
+		57EC53F4172341330045E2CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "twas/twas-Prefix.pch";
 				INFOPLIST_FILE = "twas/twas-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		57AF9106171B85FD00696B25 /* Debug */ = {
+		57EC53F6172341330045E2CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/twas.app/twas";
@@ -436,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		57AF9107171B85FD00696B25 /* Release */ = {
+		57EC53F7172341330045E2CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/twas.app/twas";
@@ -456,32 +502,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57AF90C2171B85FD00696B25 /* Build configuration list for PBXProject "twas" */ = {
+		57EC53A7172341320045E2CF /* Build configuration list for PBXProject "twas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57AF9100171B85FD00696B25 /* Debug */,
-				57AF9101171B85FD00696B25 /* Release */,
+				57EC53F0172341330045E2CF /* Debug */,
+				57EC53F1172341330045E2CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57AF9102171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twas" */ = {
+		57EC53F2172341330045E2CF /* Build configuration list for PBXNativeTarget "twas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57AF9103171B85FD00696B25 /* Debug */,
-				57AF9104171B85FD00696B25 /* Release */,
+				57EC53F3172341330045E2CF /* Debug */,
+				57EC53F4172341330045E2CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		57AF9105171B85FD00696B25 /* Build configuration list for PBXNativeTarget "twasTests" */ = {
+		57EC53F5172341330045E2CF /* Build configuration list for PBXNativeTarget "twasTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57AF9106171B85FD00696B25 /* Debug */,
-				57AF9107171B85FD00696B25 /* Release */,
+				57EC53F6172341330045E2CF /* Debug */,
+				57EC53F7172341330045E2CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 57AF90BF171B85FD00696B25 /* Project object */;
+	rootObject = 57EC53A4172341320045E2CF /* Project object */;
 }

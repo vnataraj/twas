@@ -2,17 +2,38 @@
 //  twasAppDelegate.m
 //  twas
 //
-//  Created by Vipul Nataraj on 4/14/13.
+//  Created by Vipul Nataraj on 4/20/13.
 //  Copyright (c) 2013 Nakama. All rights reserved.
 //
 
 #import "twasAppDelegate.h"
 
 @implementation twasAppDelegate
+@synthesize window = _window;
+@synthesize accountStore= _accountStore;
+@synthesize profileImages=_profileImages;
+@synthesize userAccount=_userAccount;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.accountStore = [[ACAccountStore alloc] init];
+    self.profileImages = [NSMutableDictionary dictionary];
+    ACAccountType *twitter = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    [self.accountStore requestAccessToAccountsWithType:ACAccountTypeIdentifierTwitter options:nil completion:^(BOOL granted, NSError *error) {
+        if(granted)
+        {
+            NSArray *twitterAccountList= [self.accountStore accountsWithAccountType:ACAccountTypeIdentifierTwitter];
+            if([twitterAccountList count])
+            {
+                self.userAccount = [twitterAccountList objectAtIndex:0];
+                [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"AccountAccessGotTwitterNotification" object:nil]];
+            }
+            else{
+                NSLog(@"No Twitter Accounts found! Please be sure to add Twitter in your Accounts list!");
+            }
+        }
+    }];
     return YES;
 }
 							

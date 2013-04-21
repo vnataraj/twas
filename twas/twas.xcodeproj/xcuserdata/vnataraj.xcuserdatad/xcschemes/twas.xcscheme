@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57AF90C6171B85FD00696B25"
+               BlueprintIdentifier = "57EC53AB172341320045E2CF"
                BuildableName = "twas.app"
                BlueprintName = "twas"
                ReferencedContainer = "container:twas.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57AF90EF171B85FD00696B25"
+               BlueprintIdentifier = "57EC53DF172341330045E2CF"
                BuildableName = "twasTests.octest"
                BlueprintName = "twasTests"
                ReferencedContainer = "container:twas.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "57AF90C6171B85FD00696B25"
+            BlueprintIdentifier = "57EC53AB172341320045E2CF"
             BuildableName = "twas.app"
             BlueprintName = "twas"
             ReferencedContainer = "container:twas.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "57AF90C6171B85FD00696B25"
+            BlueprintIdentifier = "57EC53AB172341320045E2CF"
             BuildableName = "twas.app"
             BlueprintName = "twas"
             ReferencedContainer = "container:twas.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "57AF90C6171B85FD00696B25"
+            BlueprintIdentifier = "57EC53AB172341320045E2CF"
             BuildableName = "twas.app"
             BlueprintName = "twas"
             ReferencedContainer = "container:twas.xcodeproj">

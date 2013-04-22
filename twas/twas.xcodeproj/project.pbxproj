@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57A4AA591724AE3E0083B995 /* tweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A4AA581724AE3E0083B995 /* tweetCell.m */; };
 		57EC53B0172341320045E2CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53AF172341320045E2CF /* UIKit.framework */; };
 		57EC53B2172341320045E2CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B1172341320045E2CF /* Foundation.framework */; };
 		57EC53B4172341330045E2CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B3172341320045E2CF /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57A4AA571724AE3D0083B995 /* tweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tweetCell.h; sourceTree = "<group>"; };
+		57A4AA581724AE3E0083B995 /* tweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tweetCell.m; sourceTree = "<group>"; };
 		57EC53AC172341320045E2CF /* twas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EC53AF172341320045E2CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57EC53B1172341320045E2CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -166,6 +169,8 @@
 				57EC54001723434B0045E2CF /* NewsFeedViewController.m */,
 				57EC54021723436C0045E2CF /* MentionsViewController.h */,
 				57EC54031723436C0045E2CF /* MentionsViewController.m */,
+				57A4AA571724AE3D0083B995 /* tweetCell.h */,
+				57A4AA581724AE3E0083B995 /* tweetCell.m */,
 			);
 			path = twas;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				57EC53FE172343270045E2CF /* FollowMeViewController.m in Sources */,
 				57EC54011723434B0045E2CF /* NewsFeedViewController.m in Sources */,
 				57EC54041723436C0045E2CF /* MentionsViewController.m in Sources */,
+				57A4AA591724AE3E0083B995 /* tweetCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +524,7 @@
 				57EC53F4172341330045E2CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57EC53F5172341330045E2CF /* Build configuration list for PBXNativeTarget "twasTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +533,7 @@
 				57EC53F7172341330045E2CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

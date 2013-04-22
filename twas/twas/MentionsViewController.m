@@ -7,9 +7,14 @@
 //
 
 #import "MentionsViewController.h"
+#import "twasAppDelegate.h"
+#import "Twitter/Twitter.h"
+#import "tweetCell.h"
 
 @interface MentionsViewController ()
-
+@property (strong, nonatomic) NSArray *tweetArray;
+-(void) getFeed;
+-(void) updateFeed: (id) feedData;
 @end
 
 @implementation MentionsViewController
@@ -26,6 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    twasAppDelegate *delegater= [[UIApplication sharedApplication] delegate];
+    if(delegater.userAccount)
+    {
+        [self getFeed];
+    }
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getFeed) name:@"TwitterAccountAcquiredNotification" object:nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,7 +57,7 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -65,6 +76,57 @@
     
     return cell;
 }
+
+
+- (BOOL) canBecomeFirstResponder{
+    return YES;
+}
+- (void) viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self becomeFirstResponder];
+    [super viewDidDisappear:animated];
+}
+- (void) viewDidDisappear:(BOOL)animated{
+    [self resignFirstResponder];
+    [super viewDidDisappear:animated];
+}
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    [self getFeed];
+}
+
+-(void) getFeed{
+    NSURL *feedURL = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/home_timeline.json"];
+    NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:@"15", @"count", nil];
+    TWRequest *twitterfeed = [[TWRequest alloc] initWithURL:feedURL parameters:parameters requestMethod:TWRequestMethodGET];
+    twasAppDelegate *delegater = [[UIApplication sharedApplication] delegate];
+    twitterfeed.account=delegater.userAccount;
+    UIApplication *sharedApp = [UIApplication sharedApplication];
+    sharedApp.networkActivityIndicatorVisible = YES;
+    [twitterfeed performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        if(!error){
+            NSError *jsonError=nil;
+            id feedStuffs = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&jsonError];
+            if(!jsonError){
+                [self updateFeed:feedStuffs];
+            }
+            else{
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                [alertView show];
+            }
+        }
+        else{
+            UIAlertView *alertView= [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alertView show];
+        }
+        sharedApp.networkActivityIndicatorVisible=NO;
+    }];
+    
+}
+
+-(void) updateFeed: (id)feedData{
+    //donothing();
+}
+
 
 /*
 // Override to support conditional editing of the table view.

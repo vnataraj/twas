@@ -60,19 +60,34 @@
                                     <action selector="attachTapped:" destination="2" eventType="touchUpInside" id="cCM-AI-Qrn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-5M-pSn">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sync">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="syncTapped:" destination="2" eventType="touchUpInside" id="lcu-cQ-EUK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hOo-8H-Rww" firstAttribute="top" secondItem="Vmd-Sx-MfB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1rJ-vd-etA"/>
                             <constraint firstAttribute="bottom" secondItem="hOo-8H-Rww" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Bc7-oU-luk"/>
+                            <constraint firstItem="Vmd-Sx-MfB" firstAttribute="top" secondItem="M6j-5M-pSn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CMV-2Y-TnD"/>
                             <constraint firstItem="Vmd-Sx-MfB" firstAttribute="trailing" secondItem="hOo-8H-Rww" secondAttribute="trailing" type="default" id="MDn-09-vTq"/>
                             <constraint firstItem="TsB-NN-iHN" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" type="default" id="Nbr-tQ-d1c"/>
                             <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
+                            <constraint firstAttribute="trailing" secondItem="hOo-8H-Rww" secondAttribute="trailing" constant="6" id="WKk-PO-jkq"/>
                             <constraint firstItem="mad-xK-mPy" firstAttribute="baseline" secondItem="hOo-8H-Rww" secondAttribute="baseline" type="default" id="Z4l-tg-drI"/>
                             <constraint firstItem="TsB-NN-iHN" firstAttribute="top" secondItem="16" secondAttribute="top" constant="131" id="hug-zt-61e"/>
                             <constraint firstItem="20" firstAttribute="top" secondItem="16" secondAttribute="top" constant="123" id="pry-a7-sZU"/>
-                            <constraint firstAttribute="trailing" secondItem="Vmd-Sx-MfB" secondAttribute="trailing" constant="13" id="xm9-H8-giI"/>
+                            <constraint firstItem="M6j-5M-pSn" firstAttribute="centerX" secondItem="Vmd-Sx-MfB" secondAttribute="centerX" type="default" id="r1T-lC-h16"/>
                             <constraint firstItem="mad-xK-mPy" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yGW-Mc-Nel"/>
                         </constraints>
                     </view>
@@ -103,7 +118,7 @@
                                     <constraint firstAttribute="height" constant="79" id="7Oo-wq-qPJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Follow">
+                                <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -111,7 +126,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="followTapped:" destination="Nj5-lV-x0n" eventType="touchUpInside" id="Pwm-Hl-oEA"/>
+                                    <action selector="followSelected:" destination="Nj5-lV-x0n" eventType="touchUpInside" id="Vfd-cA-iBU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGN-va-TCD">
@@ -123,7 +138,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5hN-oQ-jVE" firstAttribute="centerX" secondItem="Msi-r5-26t" secondAttribute="centerX" type="default" id="4lj-IP-akD"/>
-                            <constraint firstItem="lGN-va-TCD" firstAttribute="top" secondItem="Msi-r5-26t" secondAttribute="top" constant="104" id="94s-jY-VzY"/>
+                            <constraint firstItem="lGN-va-TCD" firstAttribute="top" secondItem="Msi-r5-26t" secondAttribute="top" constant="248" id="5pf-A3-a8c"/>
                             <constraint firstItem="5hN-oQ-jVE" firstAttribute="top" secondItem="Msi-r5-26t" secondAttribute="top" constant="220" id="mvS-5V-9Fv"/>
                             <constraint firstItem="lGN-va-TCD" firstAttribute="centerX" secondItem="5hN-oQ-jVE" secondAttribute="centerX" type="default" id="sQJ-eE-hma"/>
                         </constraints>
@@ -171,22 +186,23 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cla-h7-ss0">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="6HQ-WB-GQ1"/>
-                                                <constraint firstAttribute="height" constant="50" id="U6S-Fd-UZh"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="cO5-6b-Rfo" firstAttribute="leading" secondItem="Qh6-Bh-rAS" secondAttribute="leading" type="default" id="1uB-2S-GgM"/>
                                     <constraint firstItem="Cla-h7-ss0" firstAttribute="centerY" secondItem="kNK-GO-xa4" secondAttribute="centerY" type="default" id="CYD-EN-eDc"/>
-                                    <constraint firstAttribute="trailing" secondItem="cO5-6b-Rfo" secondAttribute="trailing" constant="20" type="default" id="OEH-h7-tBR"/>
+                                    <constraint firstItem="Qh6-Bh-rAS" firstAttribute="leading" secondItem="kNK-GO-xa4" secondAttribute="leading" constant="71" id="P3j-lI-BAw"/>
+                                    <constraint firstItem="Qh6-Bh-rAS" firstAttribute="top" secondItem="kNK-GO-xa4" secondAttribute="top" constant="9" id="TZi-n9-HyI"/>
+                                    <constraint firstItem="Qh6-Bh-rAS" firstAttribute="top" secondItem="Cla-h7-ss0" secondAttribute="top" type="default" id="dnL-HI-XTO"/>
                                     <constraint firstItem="Cla-h7-ss0" firstAttribute="leading" secondItem="kNK-GO-xa4" secondAttribute="leading" constant="7" id="qgd-XB-VHb"/>
                                     <constraint firstItem="Cla-h7-ss0" firstAttribute="bottom" secondItem="cO5-6b-Rfo" secondAttribute="bottom" type="default" id="veU-md-qXo"/>
-                                    <constraint firstItem="Qh6-Bh-rAS" firstAttribute="leading" secondItem="cO5-6b-Rfo" secondAttribute="leading" type="default" id="yeA-vc-VwC"/>
-                                    <constraint firstItem="Qh6-Bh-rAS" firstAttribute="top" secondItem="Cla-h7-ss0" secondAttribute="top" type="default" id="zls-1E-uqk"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="label" destination="cO5-6b-Rfo" id="tbs-f9-nfy"/>
+                                    <outlet property="pfPic" destination="Cla-h7-ss0" id="RgR-2l-Lwf"/>
                                     <outlet property="userNameCell" destination="Qh6-Bh-rAS" id="xFB-7S-YAO"/>
                                 </connections>
                             </tableViewCell>
@@ -228,13 +244,14 @@
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31v-Up-FOF">
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="fYp-Qa-VoL"/>
                                                 <constraint firstAttribute="width" constant="50" id="pDZ-WB-7af"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v1-oL-fLi">
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="WcM-8J-apm"/>
                                                 <constraint firstAttribute="width" constant="237" id="fYX-Up-44X"/>
-                                                <constraint firstAttribute="height" constant="35" id="ytq-Ls-IPe"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -244,16 +261,16 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="1v1-oL-fLi" firstAttribute="bottom" secondItem="31v-Up-FOF" secondAttribute="bottom" type="default" id="BaN-0q-cQc"/>
                                     <constraint firstItem="IuC-5L-zhn" firstAttribute="top" secondItem="31v-Up-FOF" secondAttribute="top" type="default" id="QQD-QC-kDV"/>
                                     <constraint firstItem="31v-Up-FOF" firstAttribute="centerY" secondItem="DVm-YV-8yG" secondAttribute="centerY" type="default" id="RbR-9p-PZC"/>
                                     <constraint firstItem="1v1-oL-fLi" firstAttribute="leading" secondItem="31v-Up-FOF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Tkg-KO-t4z"/>
+                                    <constraint firstItem="31v-Up-FOF" firstAttribute="bottom" secondItem="1v1-oL-fLi" secondAttribute="bottom" type="default" id="YbW-cX-AWH"/>
                                     <constraint firstItem="IuC-5L-zhn" firstAttribute="leading" secondItem="31v-Up-FOF" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="bco-9V-glE"/>
                                     <constraint firstAttribute="trailing" secondItem="1v1-oL-fLi" secondAttribute="trailing" constant="20" type="default" id="mLK-K9-x9J"/>
-                                    <constraint firstItem="1v1-oL-fLi" firstAttribute="top" secondItem="IuC-5L-zhn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xZF-ed-8rq"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="label" destination="1v1-oL-fLi" id="bQh-05-jUV"/>
+                                    <outlet property="pfPic" destination="31v-Up-FOF" id="4pe-Yf-Prs"/>
                                     <outlet property="userNameCell" destination="IuC-5L-zhn" id="4pC-Oi-sdp"/>
                                 </connections>
                             </tableViewCell>
@@ -462,6 +479,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TweetViewController.h"/>
             <relationships>
                 <relationship kind="action" name="attachTapped:"/>
+                <relationship kind="action" name="syncTapped:"/>
                 <relationship kind="action" name="tweetTapped:"/>
                 <relationship kind="outlet" name="attachedLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="statusTextField" candidateClass="UITextField"/>
@@ -472,6 +490,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/tweetCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pfPic" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="userNameCell" candidateClass="UILabel"/>
             </relationships>
         </class>

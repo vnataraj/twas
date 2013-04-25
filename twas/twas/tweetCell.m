@@ -11,9 +11,9 @@
 #import <Twitter/Twitter.h>
 
 @implementation tweetCell
-@synthesize label= _label;
-@synthesize pfPic= _pfPic;
-@synthesize userNameCell= _userNameCell;
+@synthesize label;
+@synthesize pfPic;
+@synthesize userNameCell;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

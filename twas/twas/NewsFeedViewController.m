@@ -143,7 +143,10 @@
 }
 
 -(void) updateFeed: (id)feedData{
-    //donothing();
+    for(NSDictionary *tempDict in feedData){
+        
+    }
+    
 }
 
 /*

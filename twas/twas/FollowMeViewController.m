@@ -37,12 +37,12 @@
             if ([responseString isEqualToString:@"true"])
             {
                 self.followLabel.text =
-                @"Follow KaimanQ";
+                @"Follow vipulnataraj";
                 _isFollowing = YES; }
             else
             {
                 self.followLabel.text =
-                @"Unfollow KaimanQ";
+                @"Unfollow vipulnataraj";
                 _isFollowing = NO;
             }
         } else {
@@ -57,7 +57,7 @@
     }];
 }
 
-- (IBAction)followTapped:(id)sender{
+- (IBAction)followSelected:(id)sender{
     NSURL *feedURL;
     if (_isFollowing) {
         feedURL = [NSURL URLWithString:@"http://api.twitter.com/1/friendships/destroy.json"];
@@ -76,11 +76,11 @@
             if (!_isFollowing)
             {
                 self.followLabel.text =
-                @"Unfollow KaimanQ";
+                @"Unfollow vipulnataraj";
                 _isFollowing = YES;
             } else {
                 self.followLabel.text =
-                @"Follow KaimanQ";
+                @"Follow vipulnataraj";
                 _isFollowing = NO;
             }
         } else {

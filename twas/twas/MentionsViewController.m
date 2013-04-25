@@ -114,7 +114,7 @@
 }
 
 -(void) getFeed{
-    NSURL *feedURL = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/home_timeline.json"];
+    NSURL *feedURL = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/mentions.json"];
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:@"15", @"count", nil];
     SLRequest *twitterfeed = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:feedURL parameters:parameters];
     twasAppDelegate *delegater = [[UIApplication sharedApplication] delegate];

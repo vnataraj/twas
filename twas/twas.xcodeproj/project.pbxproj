@@ -11,6 +11,8 @@
 		57DE963B17279CF800170E36 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE963A17279CF800170E36 /* Social.framework */; };
 		57DE963D1727B6AE00170E36 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE963C1727B6AE00170E36 /* AudioToolbox.framework */; };
 		57DE96421728B5D000170E36 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE96411728B5D000170E36 /* libsqlite3.dylib */; };
+		57DE96451728F3AE00170E36 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DE96441728F3AE00170E36 /* Reachability.m */; };
+		57DE964717290ACE00170E36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DE964617290ACD00170E36 /* SystemConfiguration.framework */; };
 		57EC53B0172341320045E2CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53AF172341320045E2CF /* UIKit.framework */; };
 		57EC53B2172341320045E2CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B1172341320045E2CF /* Foundation.framework */; };
 		57EC53B4172341330045E2CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EC53B3172341320045E2CF /* CoreGraphics.framework */; };
@@ -56,6 +58,9 @@
 		57DE963A17279CF800170E36 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		57DE963C1727B6AE00170E36 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		57DE96411728B5D000170E36 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		57DE96431728F3AE00170E36 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		57DE96441728F3AE00170E36 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		57DE964617290ACD00170E36 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		57EC53AC172341320045E2CF /* twas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EC53AF172341320045E2CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		57EC53B1172341320045E2CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DE964717290ACE00170E36 /* SystemConfiguration.framework in Frameworks */,
 				57DE96421728B5D000170E36 /* libsqlite3.dylib in Frameworks */,
 				57DE963D1727B6AE00170E36 /* AudioToolbox.framework in Frameworks */,
 				57DE963B17279CF800170E36 /* Social.framework in Frameworks */,
@@ -127,6 +133,7 @@
 		57EC53A3172341320045E2CF = {
 			isa = PBXGroup;
 			children = (
+				57DE964617290ACD00170E36 /* SystemConfiguration.framework */,
 				57DE96411728B5D000170E36 /* libsqlite3.dylib */,
 				57DE963C1727B6AE00170E36 /* AudioToolbox.framework */,
 				57DE963A17279CF800170E36 /* Social.framework */,
@@ -177,6 +184,8 @@
 				57EC53B6172341330045E2CF /* Supporting Files */,
 				57EC53FC172343270045E2CF /* FollowMeViewController.h */,
 				57EC53FD172343270045E2CF /* FollowMeViewController.m */,
+				57DE96431728F3AE00170E36 /* Reachability.h */,
+				57DE96441728F3AE00170E36 /* Reachability.m */,
 				57EC53FF1723434B0045E2CF /* NewsFeedViewController.h */,
 				57EC54001723434B0045E2CF /* NewsFeedViewController.m */,
 				57EC54021723436C0045E2CF /* MentionsViewController.h */,
@@ -344,6 +353,7 @@
 				57EC54011723434B0045E2CF /* NewsFeedViewController.m in Sources */,
 				57EC54041723436C0045E2CF /* MentionsViewController.m in Sources */,
 				57A4AA591724AE3E0083B995 /* tweetCell.m in Sources */,
+				57DE96451728F3AE00170E36 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

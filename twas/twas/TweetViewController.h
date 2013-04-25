@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <sqlite3.h>
+#import "Reachability.h"
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
 @interface TweetViewController : UIViewController
+{
+    Reachability *internetReachable;
+}
 @property (weak, nonatomic) IBOutlet UILabel *attachedLabel;
 @property (weak, nonatomic) IBOutlet UITextField *statusTextField;
 @property (weak, nonatomic) IBOutlet UILabel *successLabel;
 - (IBAction)attachTapped:(id)sender;
 - (IBAction)tweetTapped:(id)sender;
+- (IBAction)syncTapped:(id)sender;
 @end

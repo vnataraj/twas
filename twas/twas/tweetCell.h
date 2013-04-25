@@ -11,5 +11,5 @@
 @interface tweetCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *label;
 @property (strong, nonatomic) IBOutlet UILabel *userNameCell;
-@property (strong, nonatomic) UIImageView *pfPic;
+@property (strong, nonatomic) IBOutlet UIImageView *pfPic;
 @end

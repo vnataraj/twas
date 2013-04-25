@@ -9,7 +9,7 @@
 #import "NewsFeedViewController.h"
 #import "twasAppDelegate.h"
 #import "tweetCell.h"
-#import "Twitter/Twitter.h"
+#import <Twitter/Twitter.h>
 
 @interface NewsFeedViewController ()
 @property (strong, nonatomic) NSArray *tweetArray;
@@ -54,25 +54,44 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return self.tweetArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    static NSString *CellIdentifier = @"ContentCell";
+    tweetCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    NSDictionary *currentTweet = [self.tweetArray objectAtIndex:indexPath.row];
+    NSDictionary *currentUser = [currentTweet objectForKey:@"user"];
+    cell.userNameCell.text = [currentUser objectForKey:@"name"];
+    cell.label.text = [currentTweet objectForKey:@"text"];
+    cell.pfPic.image = [UIImage imageNamed:@"SomeDefaultImage.png"];
+    NSString *userName = cell.label.text;
+    twasAppDelegate *delegater = [[UIApplication sharedApplication] delegate];
+    if ([delegater.profileImages objectForKey:userName]){
+        cell.pfPic.image = [delegater.profileImages objectForKey:userName];
+    }
+    else {
+        dispatch_queue_t concurrentQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_async(concurrentQueue, ^{
+            NSURL *imageURL = [NSURL URLWithString: [currentUser objectForKey:@"profile_image_url"]];
+            __block NSData *imageData;
+            dispatch_sync(concurrentQueue, ^{
+                imageData = [NSData dataWithContentsOfURL:imageURL];
+                [delegater.profileImages setObject:[UIImage imageWithData:imageData] forKey:userName];
+            });
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                cell.pfPic.image = [delegater.profileImages objectForKey:userName];
+            });
+        });
+    }
     return cell;
 }
 
@@ -97,7 +116,7 @@
 -(void) getFeed{
     NSURL *feedURL = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/home_timeline.json"];
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:@"15", @"count", nil];
-    TWRequest *twitterfeed = [[TWRequest alloc] initWithURL:feedURL parameters:parameters requestMethod:TWRequestMethodGET];
+    SLRequest *twitterfeed = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:feedURL parameters:parameters];
     twasAppDelegate *delegater = [[UIApplication sharedApplication] delegate];
     twitterfeed.account=delegater.userAccount;
     UIApplication *sharedApp = [UIApplication sharedApplication];

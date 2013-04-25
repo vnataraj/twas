@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FollowMeViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *followLabel;
+- (IBAction)followSelected:(id)sender;
 @end

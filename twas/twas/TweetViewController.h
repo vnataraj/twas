@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 @interface TweetViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *attachedLabel;
+@property (weak, nonatomic) IBOutlet UITextField *statusTextField;
+@property (weak, nonatomic) IBOutlet UILabel *successLabel;
+- (IBAction)attachTapped:(id)sender;
+- (IBAction)tweetTapped:(id)sender;
 @end

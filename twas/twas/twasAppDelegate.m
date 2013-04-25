@@ -16,23 +16,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window.backgroundColor = [UIColor blackColor];
+    [self.window makeKeyAndVisible];
+    //self.window.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"testbg.png"]];
+    
+    // Set StatusBar Color
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    
+    // Add the tab bar controller's current view as a subview of the window
     // Override point for customization after application launch.
-    self.accountStore = [[ACAccountStore alloc] init];
+    _accountStore = [[ACAccountStore alloc] init];
     self.profileImages = [NSMutableDictionary dictionary];
     ACAccountType *twitter = [self.accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
-    [self.accountStore requestAccessToAccountsWithType:ACAccountTypeIdentifierTwitter options:nil completion:^(BOOL granted, NSError *error) {
-        if(granted)
+    [self.accountStore requestAccessToAccountsWithType:twitter options:nil completion:^(BOOL granted, NSError *error) {
+        if(granted == YES)
         {
-            NSArray *twitterAccountList= [self.accountStore accountsWithAccountType:ACAccountTypeIdentifierTwitter];
-            if([twitterAccountList count])
+            NSLog(@"Access should be granted");
+            NSArray *twitterAccountList= [self.accountStore accountsWithAccountType:twitter];
+            if([twitterAccountList count] > 0)
             {
+                NSLog(@"here's the account");
                 self.userAccount = [twitterAccountList objectAtIndex:0];
                 [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"AccountAccessGotTwitterNotification" object:nil]];
             }
+        }
             else{
                 NSLog(@"No Twitter Accounts found! Please be sure to add Twitter in your Accounts list!");
+                return;
             }
-        }
     }];
     return YES;
 }

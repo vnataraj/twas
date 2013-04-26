@@ -20,7 +20,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-8H-Rww">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Bps-aI-Slj"/>
+                                    <constraint firstAttribute="width" constant="71" id="tbp-SY-Oyo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="Tweet">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,7 +38,7 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mad-xK-mPy">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="9Mm-I5-fHc"/>
+                                    <constraint firstAttribute="width" constant="193" id="aKT-L3-jYD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -48,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmd-Sx-MfB">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <state key="normal" title="Attach">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,41 +64,27 @@
                                     <action selector="attachTapped:" destination="2" eventType="touchUpInside" id="cCM-AI-Qrn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6j-5M-pSn">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sync">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="syncTapped:" destination="2" eventType="touchUpInside" id="lcu-cQ-EUK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hOo-8H-Rww" firstAttribute="top" secondItem="Vmd-Sx-MfB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1rJ-vd-etA"/>
-                            <constraint firstAttribute="bottom" secondItem="hOo-8H-Rww" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Bc7-oU-luk"/>
-                            <constraint firstItem="Vmd-Sx-MfB" firstAttribute="top" secondItem="M6j-5M-pSn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="CMV-2Y-TnD"/>
-                            <constraint firstItem="Vmd-Sx-MfB" firstAttribute="trailing" secondItem="hOo-8H-Rww" secondAttribute="trailing" type="default" id="MDn-09-vTq"/>
+                            <constraint firstAttribute="trailing" secondItem="Vmd-Sx-MfB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HLo-PW-sP3"/>
+                            <constraint firstAttribute="bottom" secondItem="hOo-8H-Rww" secondAttribute="bottom" constant="162" id="NGF-Vk-Vo0"/>
                             <constraint firstItem="TsB-NN-iHN" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" type="default" id="Nbr-tQ-d1c"/>
                             <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
-                            <constraint firstAttribute="trailing" secondItem="hOo-8H-Rww" secondAttribute="trailing" constant="6" id="WKk-PO-jkq"/>
+                            <constraint firstAttribute="bottom" secondItem="mad-xK-mPy" secondAttribute="bottom" constant="176" id="YGk-4q-09R"/>
                             <constraint firstItem="mad-xK-mPy" firstAttribute="baseline" secondItem="hOo-8H-Rww" secondAttribute="baseline" type="default" id="Z4l-tg-drI"/>
+                            <constraint firstAttribute="bottom" secondItem="Vmd-Sx-MfB" secondAttribute="bottom" constant="102" id="bHy-kS-jy2"/>
+                            <constraint firstAttribute="trailing" secondItem="hOo-8H-Rww" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="c9Q-5F-5IO"/>
+                            <constraint firstItem="mad-xK-mPy" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="21" id="cbb-3s-qlR"/>
                             <constraint firstItem="TsB-NN-iHN" firstAttribute="top" secondItem="16" secondAttribute="top" constant="131" id="hug-zt-61e"/>
+                            <constraint firstItem="Vmd-Sx-MfB" firstAttribute="leading" secondItem="hOo-8H-Rww" secondAttribute="leading" type="default" id="iFS-i0-TKS"/>
                             <constraint firstItem="20" firstAttribute="top" secondItem="16" secondAttribute="top" constant="123" id="pry-a7-sZU"/>
-                            <constraint firstItem="M6j-5M-pSn" firstAttribute="centerX" secondItem="Vmd-Sx-MfB" secondAttribute="centerX" type="default" id="r1T-lC-h16"/>
-                            <constraint firstItem="mad-xK-mPy" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yGW-Mc-Nel"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" image="first" id="7"/>
                     <navigationItem key="navigationItem" id="kyP-L0-sft"/>
                     <connections>
-                        <outlet property="attachedLabel" destination="20" id="Mgx-Qy-Z0g"/>
                         <outlet property="statusTextField" destination="mad-xK-mPy" id="jFa-nn-vik"/>
                         <outlet property="successLabel" destination="TsB-NN-iHN" id="Zbq-hI-iJj"/>
                         <outlet property="view" destination="16" id="Tll-4b-Sgz"/>

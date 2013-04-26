@@ -143,10 +143,7 @@
 }
 
 -(void) updateFeed: (id)feedData{
-    for(NSDictionary *tempDict in feedData){
-        
-    }
-    
+   // _tweetArray;
 }
 
 /*

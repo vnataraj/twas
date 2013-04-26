@@ -95,12 +95,24 @@
     return ([NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.apple.com"]]!=NULL)?YES:NO;
 }
 
+- (void) updateConnectionLabels{
+    if([self connectedToNetwork]){
+        
+    }
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(scheduleCheckConnection) userInfo:nil repeats:NO];
+}
+
+-(void) scheduleCheckConnection{
+    [self performSelectorInBackground:@selector(enterVoidLoop) withObject:nil];
+}
+
 - (void) enterVoidLoop{
     if([self connectedToNetwork]==YES){
-        [self tweetTapped:nil];
+        [self syncTapped:nil];
     }
     else{
-        [self enterVoidLoop];
+        isConnected=NO;
+        [self performSelectorOnMainThread:@selector(updateConnectionLabels) withObject:nil waitUntilDone:NO];
     }
 }
 
@@ -113,7 +125,7 @@
         if (sqlite3_open(dbpath, &(tweetDB)) == SQLITE_OK)
         {
             NSString *querySQL = [NSString stringWithFormat:
-                                  @"SELECT tweet FROM tweets WHERE id=1"];
+                                  @"SELECT tweet FROM tweets WHERE id=(SELECT max(id) FROM tweets)"];
             const char *query_stmt = [querySQL UTF8String];
             if (sqlite3_prepare_v2(tweetDB,
                                    query_stmt, -1, &statement, NULL) == SQLITE_OK)
@@ -124,13 +136,6 @@
                                             initWithUTF8String:
                                             (const char *) sqlite3_column_text(statement, 0)];
                     self.statusTextField.text = tweetField;
-                    NSLog(@"Match Found!");
-                    NSString *querySQLs=[NSString stringWithFormat:@"DELETE * FROM tweets WHERE id=1"];
-                    const char *query_stmts=[querySQLs UTF8String];
-                    if(sqlite3_prepare_v2(tweetDB, query_stmts, -1, &statement2, NULL)==SQLITE_OK){
-                        if(sqlite3_step(statement2)==SQLITE_DONE){
-                            NSLog(@"Deleted");
-                        }
                     }
                 }
                 else {
@@ -163,12 +168,25 @@
                 }
                 sharedApplication.networkActivityIndicatorVisible = NO;
             }];
-            
+            if(sqlite3_open(dbpath, &(tweetDB))==SQLITE_OK){
+                NSString *querySQLs=[NSString stringWithFormat:@"DELETE FROM tweets WHERE id=(SELECT min(id) FROM tweets)"];
+                const char *query_stmts=[querySQLs UTF8String];
+                if(sqlite3_prepare_v2(tweetDB, query_stmts, -1, &statement2, NULL)==SQLITE_OK){
+                    if(sqlite3_step(statement2)==SQLITE_DONE){
+                        NSLog(@"stash popped");
+                    }
+                    else{
+                        NSLog(@"not able to be deleted!");
+                    }
+                    sqlite3_finalize(statement2);
+                    sqlite3_close(tweetDB);
+            }
         }
     }
 }
 
 - (IBAction)tweetTapped:(id)sender { self.successLabel.text = @"";
+    [self performSelectorInBackground:@selector(enterVoidLoop) withObject:nil];
     if([self connectedToNetwork] == NO){
         sqlite3_stmt *stmtForFiller;
         const char *dbPath = [_dataBase UTF8String];
@@ -192,6 +210,7 @@
         //[self enterVoidLoop];
         return;
     }
+    [self syncTapped:sender];
     NSURL *feedURL;
     if (_isContaining)
     {

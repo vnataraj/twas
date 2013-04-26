@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "twas/TweetViewController.m"
-         timestampString = "388602723.799392"
+         timestampString = "388642732.271347"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "172"
-         endingLineNumber = "172"
+         startingLineNumber = "190"
+         endingLineNumber = "190"
          landmarkName = "-tweetTapped:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -18,6 +18,7 @@
     sqlite3 *tweetDB;
 }
 @property (assign) BOOL isContaining;
+@property (assign) BOOL isMoreEntries;
 @property(strong, nonatomic) NSString *dataBase;
 @property (assign) BOOL isConnected;
 - (void) dismissKeyboard;
@@ -27,7 +28,7 @@
 @synthesize isContaining=_isContaining;
 @synthesize isConnected;
 @synthesize dataBase=_dataBase;
-
+@synthesize isMoreEntries;
 -(BOOL)shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation)interfaceOrientation{
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
@@ -42,6 +43,7 @@
     [super viewDidLoad];
     _isContaining = NO;
     isConnected=YES;
+    isMoreEntries=NO;
     UITapGestureRecognizer *tapChecker = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     tapChecker.numberOfTapsRequired = 1;
     tapChecker.cancelsTouchesInView=NO;
@@ -116,6 +118,7 @@
     }
 }
 
+
 -(IBAction)syncTapped:(id)sender{
     if([self connectedToNetwork]==YES){
         const char *dbpath = [_dataBase UTF8String];
@@ -125,7 +128,7 @@
         if (sqlite3_open(dbpath, &(tweetDB)) == SQLITE_OK)
         {
             NSString *querySQL = [NSString stringWithFormat:
-                                  @"SELECT tweet FROM tweets WHERE id=(SELECT max(id) FROM tweets)"];
+                                  @"SELECT tweet FROM tweets WHERE id=(SELECT min(id) FROM tweets)"];
             const char *query_stmt = [querySQL UTF8String];
             if (sqlite3_prepare_v2(tweetDB,
                                    query_stmt, -1, &statement, NULL) == SQLITE_OK)
@@ -178,12 +181,21 @@
                     else{
                         NSLog(@"not able to be deleted!");
                     }
+                    if(sqlite3_column_text(statement2, 0)!=nil){
+                        isMoreEntries=YES;
+                    }
+                    else{
+                        isMoreEntries=NO;
+                    }
                     sqlite3_finalize(statement2);
                     sqlite3_close(tweetDB);
             }
         }
     }
     self.statusTextField.text=@"";
+    if([self isMoreEntries] == YES){
+        [self syncTapped:sender];
+    }
 }
 
 - (IBAction)tweetTapped:(id)sender { self.successLabel.text = @"";

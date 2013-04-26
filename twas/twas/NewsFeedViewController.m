@@ -14,7 +14,6 @@
 @interface NewsFeedViewController ()
 @property (strong, nonatomic) NSArray *tweetArray;
 - (void) getFeed;
-- (void) updateFeed: (id) feedData;
 @end
 
 @implementation NewsFeedViewController
@@ -124,9 +123,11 @@
     [twitterfeed performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
         if(!error){
             NSError *jsonError=nil;
-            id feedStuffs = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&jsonError];
+            _tweetArray = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&jsonError];
             if(!jsonError){
-                [self updateFeed:feedStuffs];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.tableView reloadData];
+                });
             }
             else{
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
@@ -142,9 +143,6 @@
     
 }
 
--(void) updateFeed: (id)feedData{
-   // _tweetArray;
-}
 
 /*
 // Override to support conditional editing of the table view.

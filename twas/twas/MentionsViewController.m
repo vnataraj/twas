@@ -14,7 +14,6 @@
 @interface MentionsViewController ()
 @property (strong, nonatomic) NSArray *tweetArray;
 -(void) getFeed;
--(void) updateFeed: (id) feedData;
 @end
 
 @implementation MentionsViewController
@@ -124,9 +123,11 @@
     [twitterfeed performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
         if(!error){
             NSError *jsonError=nil;
-            id feedStuffs = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&jsonError];
+            _tweetArray = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&jsonError];
             if(!jsonError){
-                [self updateFeed:feedStuffs];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.tableView reloadData];
+                });
             }
             else{
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
@@ -140,10 +141,6 @@
         sharedApp.networkActivityIndicatorVisible=NO;
     }];
     
-}
-
--(void) updateFeed: (id)feedData{
-    //donothing();
 }
 
 

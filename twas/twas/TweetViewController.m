@@ -3,6 +3,7 @@
 //  twas
 //
 //  thanks to Marcio Valenzuela for his Twitter web request help http://santiapps.com
+//  thanks to MEGDAN Software for their wonderful method of checking for connectivity
 //
 //  Created by Vipul Nataraj on 4/20/13.
 //  Copyright (c) 2013 Nakama. All rights reserved.
@@ -50,7 +51,6 @@
     dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     docsDir = dirPaths[0];
     
-    // Build the path to the database file
     _dataBase = [[NSString alloc]initWithString: [docsDir stringByAppendingPathComponent:@"Tweets.db"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
@@ -183,6 +183,7 @@
             }
         }
     }
+    self.statusTextField.text=@"";
 }
 
 - (IBAction)tweetTapped:(id)sender { self.successLabel.text = @"";
@@ -207,7 +208,6 @@
             
             NSLog(@"Internet connection not present!!");
         }
-        //[self enterVoidLoop];
         return;
     }
     [self syncTapped:sender];

@@ -33,7 +33,6 @@
         if (!error) {
             NSString *responseString =
             [[NSString alloc] initWithBytes:[responseData bytes] length:[responseData length] encoding:NSUTF8StringEncoding];
-            // 8. Set label's text to follower or not.
             if ([responseString isEqualToString:@"true"])
             {
                 self.followLabel.text =
@@ -46,13 +45,11 @@
                 _isFollowing = NO;
             }
         } else {
-            // 9. If TWR unsuccessful, show alertview w/ error
             UIAlertView *alertView = [[UIAlertView alloc]
                                       initWithTitle:@"Error" message:[error localizedDescription] delegate:nil
                                       cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alertView show];
         }
-        // 10. Stop activity indicator
         sharedApplication.networkActivityIndicatorVisible = NO;
     }];
 }

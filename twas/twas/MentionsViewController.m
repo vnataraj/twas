@@ -102,6 +102,7 @@
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self becomeFirstResponder];
+    [self getFeed];
     [super viewDidDisappear:animated];
 }
 - (void) viewDidDisappear:(BOOL)animated{
@@ -113,6 +114,7 @@
 }
 
 -(void) getFeed{
+    [self.tableView reloadData];
     NSURL *feedURL = [NSURL URLWithString:@"http://api.twitter.com/1/statuses/mentions.json"];
     NSDictionary *parameters = [NSDictionary dictionaryWithObjectsAndKeys:@"15", @"count", nil];
     SLRequest *twitterfeed = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:feedURL parameters:parameters];
